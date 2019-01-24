@@ -185,10 +185,12 @@ while flag:
     print("################################################")
     print("###############  Inicio programa  ##############")
     print("################################################")
+    print("Ingrese el tamano del bloque: ")
+    block_size = int(raw_input())
+    print("Ingrese el tamano de MAC: ")
+    mac_size = int(raw_input())
     print("Ingrese texto a encriptar: ")
     text = raw_input()
-    block_size = 4
-    mac_size = 3
     start_enc = timer()
     result = alg_encript(text, 'q1w2e3r4t5',block_size)
     end_enc = timer()
